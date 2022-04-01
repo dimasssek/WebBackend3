@@ -1,0 +1,17 @@
+CREATE TABLE user (
+id int(10) unsigned NOT NULL AUTO_INCREMENT,
+name varchar(128) NOT NULL DEFAULT '',
+email varchar(128) NOT NULL DEFAULT '',
+date int(4) unsigned NOT NULL,
+gender varchar(4) NOT NULL DEFAULT '',
+limbs int(2) unsigned NOT NULL,
+biography varchar(1024) NOT NULL DEFAULT '',
+agreement bool NOT NULL,
+PRIMARY KEY (id)
+);
+
+CREATE TABLE user_power (
+id int(10) unsigned NOT NULL,
+power varchar(128) NOT NULL DEFAULT '',
+PRIMARY KEY (id, power)
+);
